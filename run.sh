@@ -1,13 +1,21 @@
 #!/bin/bash
 
+#folder to store sar outputs
+mkdir logs
+
 #install requrements for the python script
 pip install -r requirements.txt
 
 while :
 do
-  bash sarscript.sh &
-  sleep 10m
+  sar -u 5 10 | tee logs/cpu.log
+  sar -r 5 10 | tee logs/mem.log
+  sar -b 5 10 | tee logs/io.log
+  sar -F 5 10 | tee logs/fs.log
 
   python3 main.py &
+  
+  echo ("Logging cycle completed")
+  sleep 10m
 
 done
