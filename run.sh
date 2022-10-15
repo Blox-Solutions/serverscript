@@ -3,7 +3,7 @@
 #install requrements for the python script
 pip install -r requirements.txt
 
-while [true]
+while :
 do
   bash sarscript.sh &
   sleep 10m
