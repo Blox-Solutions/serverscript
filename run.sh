@@ -14,6 +14,7 @@ do
   sar -F 5 10 | tee logs/fs.log
 
   python3 main.py &
+  cp logs/stats.json ../API/
   
   echo ("Logging cycle completed")
   sleep 10m
