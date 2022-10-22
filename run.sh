@@ -8,13 +8,13 @@ pip install -r requirements.txt
 
 while :
 do
-  sar -u 5 10 | tee logs/cpu.log
-  sar -r 5 10 | tee logs/mem.log
-  sar -b 5 10 | tee logs/io.log
-  sar -F 5 10 | tee logs/fs.log
+  sar -u 1 10 | tee logs/cpu.log
+  sar -r 1 10 | tee logs/mem.log
+  sar -b 1 10 | tee logs/io.log
+  sar -F 1 10 | tee logs/fs.log
 
   python3 main.py &
   
-  sleep 10m
+  sleep 2m
 
 done
