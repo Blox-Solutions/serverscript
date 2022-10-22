@@ -15,7 +15,6 @@ do
 
   python3 main.py &
   
-  echo ("Logging cycle completed")
   sleep 10m
 
 done
