@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir /etc/Blox
-cd /etc/Blox
+mkdir ~/.local/share/Blox
+cd ~/.local/share/Blox
 
 git clone https://github.com/Blox-Solutions/serverscript
 git clone https://github.com/Blox-Solutions/API
