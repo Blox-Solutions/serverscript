@@ -6,9 +6,11 @@ cd ~/.local/share/Blox
 git clone https://github.com/Blox-Solutions/serverscript
 git clone https://github.com/Blox-Solutions/API
 
-cd serverscript
-bash run.sh &
-
 cd ../API
 npm install
-npm start
+npm start &
+
+sleep 5s
+
+cd serverscript
+bash run.sh &
