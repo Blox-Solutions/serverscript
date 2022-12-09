@@ -43,7 +43,7 @@ json='''
         "steal":%f,
         "idle":%f
     },
-    "memory-data":
+    "memdata":
     {
         "available":%f,
         "used":%f,
@@ -111,6 +111,7 @@ json='''
 
 #writes to json
 stats.write(json)
+print("Data written, Success!")
 
 #close files
 cpulog.close()
