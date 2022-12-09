@@ -111,7 +111,7 @@ json='''
 
 #writes to json
 stats.write(json)
-print("Data written, Success!")
+#print("Data written, Success!")
 
 #close files
 cpulog.close()
