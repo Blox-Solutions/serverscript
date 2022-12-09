@@ -15,6 +15,6 @@ do
 
   python3 main.py &
   
-  sleep 2m
+  sleep 1m
 
 done
