@@ -13,4 +13,10 @@ npm start &
 sleep 5s
 
 cd ../serverscript
+#folder to store sar outputs
+mkdir logs
+
+#install requrements for the python script
+pip install -r requirements.txt
+
 bash run.sh &

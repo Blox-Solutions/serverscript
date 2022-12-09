@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#folder to store sar outputs
-mkdir logs
-
-#install requrements for the python script
-pip install -r requirements.txt
-
 while :
 do
   sar -u 1 10 | tee logs/cpu.log &
